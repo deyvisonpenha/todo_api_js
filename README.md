@@ -1,28 +1,17 @@
-# Adonis API application
+Começando uma aplicação com Graphql
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+no diretorio damos 
+$ yarn init -y
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+depois:
+yarn add graphql-yoga
 
-## Setup
+criar uma pasta src onde colocaremos nossos codigos
 
-Use the adonis command to install the blueprint
+dentro do src criaremos um arquivo server.js e schema.graphql, esse ultimo é responsavel pelas
+rotas.
 
-```bash
-adonis new yardstick --api-only
-```
-
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+no graphql temos 3 tipos de rotas
+- Query: quando queremos buscar uma informação
+- Mutation: quando eu quero criar, alterar ou deletar uma informação
+- Resolver: funcionam como nossos controllers
