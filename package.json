@@ -5,8 +5,15 @@
   "repository": "https://github.com/deyvisonpenha/todo_api_js.git",
   "author": "Deyvison Penha <deyvisonpenha1@gmail.com>",
   "license": "MIT",
+  "scripts": {
+      "dev": "nodemon src/server.js",
+      "start": "node src/server.js"
+  },
   "dependencies": {
     "graphql-yoga": "^1.18.3",
     "mongoose": "^5.9.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
